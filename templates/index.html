@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>AskPlatform - Новые вопросы</title>
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Логотип -->
+                <a href="index.html" class="logo">
+                    AskPlatform
+                </a>
+
+                <!-- Навигация -->
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Главная</a>
+                    <a href="popular.html" class="nav-link">Популярное</a>
+                    <a href="ask.html" class="nav-link">Задать вопрос</a>
+                </nav>
+
+                <!-- Юзерблок с Bootstrap -->
+                <div class="user-block">
+                    <div class="dropdown">
+                        <a href="#" class="user-toggle" data-bs-toggle="dropdown">
+                            <div class="avatar">
+                                <i class="bi bi-person-fill"></i>
+                            </div>
+                            <span class="user-name">Иван Иванов</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="profile.html"><i class="bi bi-person me-2"></i>Профиль</a></li>
+                            <li><a class="dropdown-item" href="settings.html"><i class="bi bi-gear me-2"></i>Настройки</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-danger" href="logout.html"><i class="bi bi-box-arrow-right me-2"></i>Выйти</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="main">
+        <div class="container">
+            <div class="layout">
+                <!-- Левая часть - основной контент -->
+                <div class="content">
+                    <!-- Заголовок страницы -->
+                    <div class="content-header">
+                        <h1>Новые вопросы</h1>
+                        <div class="content-actions">
+                            <button class="btn btn-primary">
+                                <i class="bi bi-plus-circle"></i>
+                                Задать вопрос
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Список вопросов -->
+                    <div class="questions-list">
+                        <!-- Вопрос 1 -->
+                        <div class="question-item">
+                            <div class="question-voting">
+                                <button class="vote-btn upvote">
+                                    <i class="bi bi-caret-up-fill"></i>
+                                </button>
+                                <span class="vote-count">24</span>
+                                <button class="vote-btn downvote">
+                                    <i class="bi bi-caret-down-fill"></i>
+                                </button>
+                            </div>
+                            <div class="question-main">
+                                <div class="question-header">
+                                    <div class="question-author">
+                                        <div class="author-avatar">
+                                            <i class="bi bi-person-circle"></i>
+                                        </div>
+                                        <div class="author-info">
+                                            <span class="author-name">Петр Петров</span>
+                                            <span class="question-date">2 часа назад</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="question-title">
+                                    <a href="question.html">Как создать красивый градиент в CSS?</a>
+                                </h2>
+                                <p class="question-preview">
+                                    Ищу лучшие практики для создания плавных градиентов. Какие свойства использовать для современных браузеров? Хочу сделать плавный переход от синего к фиолетовому без резких границ.
+                                </p>
+                                <div class="question-meta">
+                                    <div class="question-tags">
+                                        <a href="#" class="tag">CSS</a>
+                                        <a href="#" class="tag">Frontend</a>
+                                        <a href="#" class="tag">Design</a>
+                                    </div>
+                                    <div class="question-stats">
+                                        <span class="stat">
+                                            <i class="bi bi-chat"></i>
+                                            12 ответов
+                                        </span>
+                                        <span class="stat">
+                                            <i class="bi bi-eye"></i>
+                                            145 просмотров
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Вопрос 2 -->
+                        <div class="question-item">
+                            <div class="question-voting">
+                                <button class="vote-btn upvote">
+                                    <i class="bi bi-caret-up-fill"></i>
+                                </button>
+                                <span class="vote-count">42</span>
+                                <button class="vote-btn downvote">
+                                    <i class="bi bi-caret-down-fill"></i>
+                                </button>
+                            </div>
+                            <div class="question-main">
+                                <div class="question-header">
+                                    <div class="question-author">
+                                        <div class="author-avatar">
+                                            <i class="bi bi-person-circle"></i>
+                                        </div>
+                                        <div class="author-info">
+                                            <span class="author-name">Мария Сидорова</span>
+                                            <span class="question-date">5 часов назад</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="question-title">
+                                    <a href="question.html">Оптимизация запросов в Django ORM</a>
+                                </h2>
+                                <p class="question-preview">
+                                    Какие есть способы оптимизации сложных запросов к БД? Использую select_related и prefetch_related, но есть ли другие методы для уменьшения количества запросов к базе данных?
+                                </p>
+                                <div class="question-meta">
+                                    <div class="question-tags">
+                                        <a href="#" class="tag">Django</a>
+                                        <a href="#" class="tag">Python</a>
+                                        <a href="#" class="tag">ORM</a>
+                                        <a href="#" class="tag">Database</a>
+                                    </div>
+                                    <div class="question-stats">
+                                        <span class="stat">
+                                            <i class="bi bi-chat"></i>
+                                            7 ответов
+                                        </span>
+                                        <span class="stat">
+                                            <i class="bi bi-eye"></i>
+                                            89 просмотров
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Вопрос 3 -->
+                        <div class="question-item">
+                            <div class="question-voting">
+                                <button class="vote-btn upvote">
+                                    <i class="bi bi-caret-up-fill"></i>
+                                </button>
+                                <span class="vote-count">18</span>
+                                <button class="vote-btn downvote">
+                                    <i class="bi bi-caret-down-fill"></i>
+                                </button>
+                            </div>
+                            <div class="question-main">
+                                <div class="question-header">
+                                    <div class="question-author">
+                                        <div class="author-avatar">
+                                            <i class="bi bi-person-circle"></i>
+                                        </div>
+                                        <div class="author-info">
+                                            <span class="author-name">Алексей Смирнов</span>
+                                            <span class="question-date">1 день назад</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="question-title">
+                                    <a href="question.html">React Hooks vs Class Components</a>
+                                </h2>
+                                <p class="question-preview">
+                                    В каких случаях лучше использовать хуки, а в каких классовые компоненты? Есть ли производительностные различия? Как правильно мигрировать со старых классовых компонентов на хуки?
+                                </p>
+                                <div class="question-meta">
+                                    <div class="question-tags">
+                                        <a href="#" class="tag">React</a>
+                                        <a href="#" class="tag">JavaScript</a>
+                                        <a href="#" class="tag">Frontend</a>
+                                    </div>
+                                    <div class="question-stats">
+                                        <span class="stat">
+                                            <i class="bi bi-chat"></i>
+                                            15 ответов
+                                        </span>
+                                        <span class="stat">
+                                            <i class="bi bi-eye"></i>
+                                            203 просмотра
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Пагинатор -->
+                    <div class="pagination">
+                        <a href="#" class="page-link prev">
+                            <i class="bi bi-chevron-left"></i>
+                        </a>
+                        <a href="#" class="page-link">1</a>
+                        <a href="#" class="page-link active">2</a>
+                        <a href="#" class="page-link">3</a>
+                        <a href="#" class="page-link">4</a>
+                        <a href="#" class="page-link">5</a>
+                        <span class="page-dots">...</span>
+                        <a href="#" class="page-link">10</a>
+                        <a href="#" class="page-link next">
+                            <i class="bi bi-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Правая часть - сайдбар -->
+                <aside class="sidebar">
+                    <!-- Популярные теги -->
+                    <div class="sidebar-block">
+                        <h3>🏷️ Популярные теги</h3>
+                        <div class="tags">
+                            <a href="#" class="tag">JavaScript</a>
+                            <a href="#" class="tag">Python</a>
+                            <a href="#" class="tag">React</a>
+                            <a href="#" class="tag">Django</a>
+                            <a href="#" class="tag">CSS</a>
+                            <a href="#" class="tag">HTML</a>
+                            <a href="#" class="tag">Vue</a>
+                            <a href="#" class="tag">Node.js</a>
+                        </div>
+                    </div>
+
+                    <!-- Лучшие пользователи -->
+                    <div class="sidebar-block">
+                        <h3>👑 Лучшие авторы</h3>
+                        <div class="users">
+                            <div class="user">
+                                <span class="user-name">Петр Петров</span>
+                                <span class="user-rating">+154</span>
+                            </div>
+                            <div class="user">
+                                <span class="user-name">Мария Сидорова</span>
+                                <span class="user-rating">+142</span>
+                            </div>
+                            <div class="user">
+                                <span class="user-name">Алексей Смирнов</span>
+                                <span class="user-rating">+128</span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bootstrap JS только для dropdown -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
